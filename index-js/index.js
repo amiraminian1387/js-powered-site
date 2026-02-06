@@ -1,13 +1,3 @@
-
-// mobile menu toggle logic
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
-
-function toggleMenu() {
-    mobileMenu.classList.toggle("active");
-}
-menuToggle.addEventListener("click", toggleMenu);
-
 // ---------------------------------------------------------------
 
 // Splash screen logic

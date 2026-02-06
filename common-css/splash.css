@@ -1,0 +1,83 @@
+/* کل صفحه اسپلش */
+#loading-screen {
+    font-family:var( --font-family-mono) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--percentage);
+    height: var(--percentage);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: var( --z-tooltip);
+    text-align: center;
+    color: var(--palette-5);
+    background: linear-gradient(120deg, #52796f, #35524f, #52796f);
+    background-size: 300% 300%;
+    animation: splashBgMove 8s ease-in-out infinite;
+}
+
+@keyframes splashBgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.loading-content {
+    padding: var(--space-xl) var(--space-2xl);
+    border-radius: var(--large-radius);
+    background: var(--loading-content-opc);
+    border: 1px solid var( --palette-10);
+}
+
+.loading-content h1,
+.loading-content h2,
+.loading-content i {
+    margin: var(--space-md) var(--zero-space);
+}
+
+.sub-icons {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    margin: var( --space-sm) var(--zero-space) var(--space-lg);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.fall {
+    animation: fall 2s forwards;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main-page {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#main-page.visible {
+    opacity: 1;
+}

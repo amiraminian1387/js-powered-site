@@ -23,6 +23,11 @@
     --light-apricot: #ffe6a7ff;
 
     /*  رنگ های فرعی ترکیبی*/
+    --bg-card: rgba(255, 255, 255, 0.06);
+    --accent: #f6b042;
+    --accent-2: #d97706;
+    --muted: rgba(255, 255, 255, 0.8);
+    --glass: rgba(255, 255, 255, 0.06);
     --gray-bg-opc: rgba(255, 255, 255, 0.25);
     --charcoal-blue-opc: #2f3e46e5;
     --loading-content-opc: rgba(0, 255, 255, 0.08);

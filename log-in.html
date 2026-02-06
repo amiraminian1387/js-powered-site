@@ -1,17 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In Page</title>
-    
-    <!-- common css ------------------------------------------------------------------------------------------------ -->
-     <link rel="stylesheet" href="./common-css/common.css">
-     <link rel="stylesheet" href="./common-css/variables.css">
-    <!-- log in ------------------------------------------------------------------------------------------------ -->
+
+    <!-- COMMON CSS ------------------------------------------------------------------------------------------------ -->
+
+    <!-- **common** -->
+    <link rel="stylesheet" href="./common-css/common.css">
+
+    <!-- **variables** -->
+
+    <link rel="stylesheet" href="./common-css/variables.css">
+
+    <!-- **splash** -->
+
+    <link rel="stylesheet" href="./common-css/splash.css">
+
+    <!-- **bootstrap** -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- LOG IN CSS / JS ------------------------------------------------------------------------------------------------ -->
+
+    <!-- **log in css** -->
+
     <link rel="stylesheet" href="./log-in-css/log-in.css">
+
+    <link rel="stylesheet" href="./log-in-css/log-in-header.css">
+
+    <link rel="stylesheet" href="./log-in-css/log-in-card.css">
+
+    <!-- **log in js** -->
+
+    <script src="./log-in-js/log-in.js" defer></script>
+
 </head>
+
 <body>
-    <h1>hello world</h1>
+    <section id="splash">
+        <div id="loading-screen">
+            <div class="loading-content">
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <h1 id="loading-text" class="hidden"> Book Nest </h1>
+
+                <div class="sub-icons">
+                    <i class="fa-brands fa-github fa-2x hidden"></i>
+                    <i class="fa-solid fa-code fa-2x hidden"></i>
+                    <i class="fa-solid fa-user fa-2x hidden"></i>
+                </div>
+
+                <h2 id="designer-text" class="hidden">Designed by <strong> Aminian / valikhai</strong></h2>
+            </div>
+        </div>
+    </section>
+    <header class="main-content">
+        <nav id="desktop">
+            <div class="header-list">
+                <div class="div-list ">
+                    <ul class="ul-list">
+                        <li class="active">
+                            <i class="fa-regular fa-house i-header-desktop"></i>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-address-card i-header-desktop"></i>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-folder-open i-header-desktop"></i>
+                            <a href="#project">Projects</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-code i-header-desktop"></i>
+                            <a href="#services">services</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope i-header-desktop"></i>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <img class="header-logo" src="./images/logo.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <nav id="mobile">
+            <div class="mobile-header">
+                <img src="./images/logo.png" alt="logo" class="mobile-logo">
+                <button id="menu-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-section" aria-live="polite">
+        <div class="login-wrapper">
+            <div class="promo" aria-hidden="false">
+                <img src="./images/logo.png" alt="BookNest logo" class="promo-img">
+                <h2>Welcome to BookNest</h2>
+                <p>Discover and buy books you love. Sign in to view orders, wishlist and personalized recommendations.
+                </p>
+                <ul class="promo-features">
+                    <li><strong>Fast delivery</strong></li>
+                    <li><strong>Member discounts</strong></li>
+                    <li><strong>Curated picks</strong></li>
+                </ul>
+            </div>
+
+            <form class="login-form" action="#" method="post" aria-labelledby="login-title">
+                <h3 id="login-title">Sign in to BookNest</h3>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8">
+
+                <div class="form-row">
+                    <label class="checkbox">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot">Forgot?</a>
+                </div>
+
+                <button class="btn-primary" type="submit">Sign In</button>
+
+                <div class="divider"><span>or</span></div>
+
+                <div class="socials">
+                    <button type="button" class="btn-social google">Sign in with Google</button>
+                    <button type="button" class="btn-social github">Sign in with GitHub</button>
+                </div>
+
+                <p class="signup">Don't have an account? <a href="log-in.html">Create one</a></p>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>

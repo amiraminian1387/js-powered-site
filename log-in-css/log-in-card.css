@@ -1,0 +1,210 @@
+/* BookNest - Log In page styles */
+
+/* Layout */
+.auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 90px);
+    padding: 60px 20px;
+    margin-top: 30px;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(10, 10, 20, 0.35);
+    backdrop-filter: blur(6px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Promo (left) */
+.promo {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--muted);
+}
+
+.promo-img {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    border-radius: 12px
+}
+
+.promo h2 {
+    font-size: 28px;
+    margin: 6px 0;
+    color: #fff
+}
+
+.promo p {
+    line-height: 1.5;
+    margin-bottom: 6px
+}
+
+.promo-features {
+    margin-top: 12px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.promo-features li {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    padding: 10px;
+    border-radius: 10px
+}
+
+/* Form (right) */
+.login-form {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.18));
+    padding: 22px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-form h3 {
+    margin: 0 0 6px 0;
+    color: var(--accent)
+}
+
+.login-form label {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    outline: none
+}
+
+.login-form input:focus {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    border-color: var(--accent-2)
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px
+}
+
+.forgot {
+    color: var(--muted);
+    text-decoration: none
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border: none;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #2b1a00;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.btn-primary:hover {
+    filter: brightness(0.95)
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 6px 0
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    flex: 1
+}
+
+.divider span {
+    padding: 0 8px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.socials {
+    display: flex;
+    gap: 10px
+}
+
+.btn-social {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: transparent;
+    color: #fff;
+    cursor: pointer
+}
+
+.btn-social.google {
+    background: linear-gradient(90deg, #db4437, #f26d5a)
+}
+
+.btn-social.github {
+    background: linear-gradient(90deg, #24292f, #393e46)
+}
+
+.signup {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 8px
+}
+
+.signup a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+/* Responsive */
+@media (max-width:880px) {
+    .login-wrapper {
+        grid-template-columns: 1fr;
+        max-width: 540px
+    }
+
+    .auth-section {
+        padding: 30px 12px
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    * {
+        animation: none !important
+    }
+}
