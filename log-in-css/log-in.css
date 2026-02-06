@@ -1,0 +1,15 @@
+body {
+  font-family: var(--font-family-sans, sans-serif);
+  font-size: var(--fs-base);
+  color: var(--parchment);
+  margin: var(--zero-space) !important;
+  padding: var(--zero-space) !important;
+  background: linear-gradient(135deg, #52796f, #6b9080, #2f3e46);
+  background-size: 400% 400%;
+  animation: bgMove 8s ease infinite;
+}
+@keyframes bgMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}

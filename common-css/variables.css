@@ -1,0 +1,143 @@
+:root {
+    /* --------------------
+     رنگ‌های اصلی تم
+     -------------------- */
+    --almond-cream: #ede0d4ff;
+    --pale-oak: #e6ccb2ff;
+    --tan: #ddb892ff;
+    --faded-copper: #b08968ff;
+    --coffee-bean: #7f5539ff;
+    --toffee-brown: #9c6644ff;
+    --faded-copper-2: #a57455ff;
+    --faded-copper-3: #ad8164ff;
+    --dusty-taupe: #b48c72ff;
+    --dusty-taupe-2: #bb967fff;
+
+
+
+    /* رنگ‌های کمکی (برای نمودارها یا تگ‌ها...) */
+    --dark-wine: #6f1d1bff;
+    --camel: #bb9457ff;
+    --dark-coffee: #432818ff;
+    --chocolate-brown: #99582aff;
+    --light-apricot: #ffe6a7ff;
+
+    /*  رنگ های فرعی ترکیبی*/
+    --gray-bg-opc: rgba(255, 255, 255, 0.25);
+    --charcoal-blue-opc: #2f3e46e5;
+    --loading-content-opc: rgba(0, 255, 255, 0.08);
+    --bg-gradient-main: linear-gradient(90deg, #005c45, #008299);
+    --bg-gradient-main-oposite: linear-gradient(90deg, #008299, #005c45);
+    /* --------------------
+    
+     تایپوگرافی
+     -------------------- */
+    --header-font: "Montserrat", sans-serif;
+    --font-family-Helvetica: Arial, Helvetica, sans-serif;
+    --font-family-sans: "Inter", "IranSans", "Helvetica Neue", Arial, sans-serif;
+    --font-family-mono: "Roboto Mono", "SFMono-Regular", Menlo, monospace;
+    --font-family-display: "Poppins", "Vazir", "IranSans";
+    --font-stylish: Georgia, 'Times New Roman', Times, serif;
+    --font-style-italic: italic;
+    /* سایزهای عمومی */
+    --size-xs: 0.75rem;
+    --size-sm: 1rem;
+    --size-md: 1.5rem;
+    --size-lg: 2rem;
+    --size-xl: 3rem;
+    --size-xxl: 4rem;
+    --size-xxxl: 5rem;
+    --image-size: 10rem;
+    /* اندازه فونت (مقیاس) */
+    --fs-xs: 12px;
+    --fs-sm: 13px;
+    --fs-base: 15px;
+    /* پایه / بدنه متن */
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 24px;
+    --fs-3xl: 30px;
+    --fs-4xl: 36px;
+    --fs-5xl: 48px;
+
+    /* وزن و ارتفاع خط */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --lh-xtight: 1;
+    --lh-tight: 1.15;
+    --lh-normal: 1.4;
+    --lh-relaxed: 1.6;
+    --lh-long: 2.1;
+
+    /* --------------------
+     فاصله‌ها (spacing scale) — استفادهٔ متداول: padding, margin
+     -------------------- */
+    --zero-space: 0px;
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+    --space-3xl: 56px;
+
+    /* --------------------
+     اندازه‌ها و اجزاء
+     -------------------- */
+    --btn-height-sm: 32px;
+    --btn-height-md: 40px;
+    --btn-height-lg: 48px;
+
+    --input-height-sm: 34px;
+    --input-height-md: 44px;
+    --input-height-lg: 52px;
+
+    --icon-sm: 14px;
+    --icon-md: 18px;
+    --icon-lg: 64px;
+
+    --card-radius: 10px;
+    --radius-sm: 6px;
+    --global-radius: 12px;
+    --large-radius: 25px;
+    --btn-radius: 32px;
+    --circle-radius: 50%;
+    --radius-round: 9999px;
+    --border-width: 1px;
+
+    --full-vw: 100vw;
+    --full-vh: 100vh;
+
+    --percentage: 100%;
+    --percentage-10: 10%;
+    --percentage-20: 20%;
+    --percentage-30: 30%;
+    --percentage-40: 40%;
+    --half-percentage: 50%;
+    --percentage-90: 90%;
+    --percentage-80: 80%;
+    --percentage-70: 70%;
+
+    /* -------------------
+
+    /* --------------------
+     breakpoints (mobile-first)
+     -------------------- */
+    --bp-xs: 360px;
+    --bp-sm: 640px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
+    --bp-xl: 1280px;
+
+    /* --------------------
+     z-index stack
+     -------------------- */
+    --z-dropdown: 900;
+    --z-header: 1000;
+    --z-modal: 1100;
+    --z-tooltip: 1200;
+}
