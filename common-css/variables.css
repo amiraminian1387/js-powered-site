@@ -29,10 +29,7 @@
     --muted: rgba(255, 255, 255, 0.8);
     --glass: rgba(255, 255, 255, 0.06);
     --gray-bg-opc: rgba(255, 255, 255, 0.25);
-    --charcoal-blue-opc: #2f3e46e5;
-    --loading-content-opc: rgba(0, 255, 255, 0.08);
-    --bg-gradient-main: linear-gradient(90deg, #005c45, #008299);
-    --bg-gradient-main-oposite: linear-gradient(90deg, #008299, #005c45);
+   
     /* --------------------
     
      تایپوگرافی

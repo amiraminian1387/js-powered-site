@@ -4,19 +4,29 @@ body {
   color: var(--parchment);
   margin: var(--zero-space) !important;
   padding: var(--zero-space) !important;
-  background: linear-gradient(135deg, #52796f, #6b9080, #2f3e46);
+  background: linear-gradient(135deg, rgb(139, 115, 75), rgb(133, 104, 57), #432818ff, #432818ff, rgb(133, 104, 57), rgb(139, 115, 75));
   background-size: 400% 400%;
-  animation: bgMove 8s ease infinite;
+  animation: bgMove 10s ease infinite;
 }
+
 @keyframes bgMove {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
+
 .loader {
   position: relative;
-  width: 33px;
-  height: 33px;
+  width: var(--space-xl);
+  height: var(--space-xl);
   perspective: 67px;
 }
 
@@ -55,11 +65,13 @@ body {
     transform: rotateY(0deg);
   }
 
-  50%, 80% {
+  50%,
+  80% {
     transform: rotateY(-180deg);
   }
 
-  90%, 100% {
+  90%,
+  100% {
     opacity: 0;
     transform: rotateY(-180deg);
   }

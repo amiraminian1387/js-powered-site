@@ -58,9 +58,10 @@ header {
 }
 
 .ul-list li a {
+    font-weight: var(--fw-regular);
     font-family: var(--header-font) !important;
     color: var(--dark-coffee);
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.5s, transform 0.5s;
 }
 
 .ul-list li:hover {
@@ -79,7 +80,7 @@ header {
 }
 
 .ul-list li:hover i {
-    color: var(--chocolate-brown);
+    color: var(--dark-coffee);
 }
 
 .ul-list li.active {
@@ -87,10 +88,12 @@ header {
     padding: var(--size-xs) var(--size-sm);
     box-shadow: 0 2px 16px color-mix(in srgb, var(--coffee-bean) 60%, transparent);
 }
+.ul-list i{
+    color: var(--chocolate-brown);
+}
 
-.ul-list li.active a,
-.ul-list li.active i {
-    color: var(--dusty-taupe);
+.ul-list li.active a {
+    color: var(--light-apricot);
 }
 
 img.header-logo {
