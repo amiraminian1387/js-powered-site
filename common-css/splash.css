@@ -13,7 +13,7 @@
     z-index: var( --z-tooltip);
     text-align: center;
     color: var(--palette-5);
-    background: linear-gradient(120deg, #52796f, #35524f, #52796f);
+    background: linear-gradient(120deg, var( --dusty-taupe-2), var(--chocolate-brown), var( --faded-copper));
     background-size: 300% 300%;
     animation: splashBgMove 8s ease-in-out infinite;
 }
