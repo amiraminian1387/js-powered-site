@@ -13,5 +13,5 @@ setTimeout(() => {
             document.getElementById("splash").style.display = "none";
             document.querySelectorAll(".main-content").forEach(el => el.style.display = "block");
         }, 10);
-    }, 3000);
+    }, 1);
 }, 100);

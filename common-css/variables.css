@@ -49,6 +49,7 @@
     --size-xl: 3rem;
     --size-xxl: 4rem;
     --size-xxxl: 5rem;
+    --size-button:8rem;
     --image-size: 10rem;
     /* اندازه فونت (مقیاس) */
     --fs-xs: 12px;
@@ -123,6 +124,7 @@
     --percentage-90: 90%;
     --percentage-80: 80%;
     --percentage-70: 70%;
+    --percentage-60: 60%;
 
     /* -------------------
 
