@@ -17,7 +17,39 @@
     background-size: 300% 300%;
     animation: splashBgMove 8s ease-in-out infinite;
 }
+.promo-img {
+    width: var(--image-size);
+    height: var(--image-size);
+    object-fit: contain;
+    border-radius: var(--global-radius);
+    animation: spin 4s cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+}
+@keyframes spin {
+    0% {
+        transform: translateY(0%);
+    }
 
+    20% {
+        transform: translateY(-100%);
+    }
+
+    40% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-300%);
+    }
+
+    80% {
+        transform: translateY(-400%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
 @keyframes splashBgMove {
     0% {
         background-position: 0% 50%;

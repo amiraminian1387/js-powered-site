@@ -1,6 +1,7 @@
 // ---------------------------------------------------------------
 
 // Splash screen logic
+// Splash screen logic
 setTimeout(() => {
     document.querySelectorAll('#splash .hidden').forEach(el => {
         el.classList.remove('hidden');
@@ -14,4 +15,3 @@ setTimeout(() => {
         }, 10);
     }, 3000);
 }, 100);
-
