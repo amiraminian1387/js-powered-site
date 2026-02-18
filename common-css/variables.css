@@ -17,6 +17,7 @@
 
     /* رنگ‌های کمکی (برای نمودارها یا تگ‌ها...) */
     --dark-wine: #6f1d1bff;
+    --wine: rgb(63, 9, 8);
     --camel: #bb9457ff;
     --dark-coffee: #432818ff;
     --chocolate-brown: #99582aff;
@@ -29,17 +30,45 @@
     --muted: rgba(255, 255, 255, 0.8);
     --glass: rgba(255, 255, 255, 0.06);
     --gray-bg-opc: rgba(255, 255, 255, 0.25);
-   
-    /* --------------------
-    
-     تایپوگرافی
-     -------------------- */
-    --header-font: "Montserrat", sans-serif;
-    --font-family-Helvetica: Arial, Helvetica, sans-serif;
-    --font-family-sans: "Inter", "IranSans", "Helvetica Neue", Arial, sans-serif;
-    --font-family-mono: "Roboto Mono", "SFMono-Regular", Menlo, monospace;
-    --font-family-display: "Poppins", "Vazir", "IranSans";
-    --font-stylish: Georgia, 'Times New Roman', Times, serif;
+    --bg-main: #ede0d4;
+    --bg-card: rgba(255, 255, 255, 0.15);
+    --accent: #f6b042;
+    --accent-dark: #d97706;
+    --text-main: #432818;
+    --text-sub: #7f5539;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --bg-main: #ede0d4;
+    --bg-card: rgba(255, 255, 255, 0.15);
+    --accent-dark: #d97706;
+    --text-main: #432818;
+    --text-sub: #7f5539;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --card-width: 280px;
+    --card-radius: 20px;
+    --img-height: 340px;
+
+    /* تایپوگرافی -------------------- */
+    --header-font: "Montserrat",
+        sans-serif;
+    --font-family-Helvetica: Arial,
+        Helvetica,
+        sans-serif;
+    --font-family-sans: "Inter",
+        "IranSans",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    --font-family-mono: "Roboto Mono",
+        "SFMono-Regular",
+        Menlo,
+        monospace;
+    --font-family-display: "Poppins",
+        "Vazir",
+        "IranSans";
+    --font-stylish: Georgia,
+        'Times New Roman',
+        Times,
+        serif;
     --font-style-italic: italic;
     /* سایزهای عمومی */
     --size-xs: 0.75rem;
@@ -49,7 +78,8 @@
     --size-xl: 3rem;
     --size-xxl: 4rem;
     --size-xxxl: 5rem;
-    --size-button:8rem;
+    --size-xxxxl: 6rem;
+    --size-button: 8rem;
     --image-size: 10rem;
     /* اندازه فونت (مقیاس) */
     --fs-xs: 12px;

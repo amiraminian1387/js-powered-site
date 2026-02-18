@@ -4,7 +4,7 @@ body {
   color: var(--parchment);
   margin: var(--zero-space) !important;
   padding: var(--zero-space) !important;
-  background: linear-gradient(135deg, rgb(139, 115, 75), rgb(133, 104, 57), #432818ff, #432818ff, rgb(133, 104, 57), rgb(139, 115, 75));
+  background: linear-gradient(135deg, rgb(61, 50, 30), rgba(73, 55, 22, 0.877), rgb(67, 34, 24), rgb(87, 68, 38));
   background-size: 400% 400%;
   animation: bgMove 10s ease infinite;
 }
@@ -22,3 +22,4 @@ body {
     background-position: 0% 0%;
   }
 }
+

@@ -1,0 +1,91 @@
+/* Section wrapper */
+#Books {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: var(--space-3xl) 0;
+  border-radius: var(--large-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Left column (intro text) */
+#Books .left h3 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--coffee-bean);
+  font-family: var(--font-family-display);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.logo-books {
+  width: var(--image-size);
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#Books .left h1 {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--dark-coffee);
+  font-family: var(--font-family-display);
+}
+
+#Books .left p {
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--faded-copper);
+  font-family: var(--font-family-sans);
+}
+
+#Books .left .details {
+  display: inline-block;
+  margin-top: var(--space-md);
+  padding: var(--space-xs) var(--space-lg);
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--btn-radius);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#Books .left .details:hover {
+  background: var(--accent-2);
+}
+
+#Books .right .col-md-6 {
+  background: var(--bg-card);
+  backdrop-filter: blur(8px);
+  border-radius: var(--card-radius);
+  padding: var(--space-md);
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#Books .right .col-md-6:hover {
+  transform: translateY(-4px);
+}
+
+#Books .right i {
+  font-size: var(--icon-lg);
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+#Books .right h2 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--coffee-bean);
+  margin-bottom: var(--space-xs);
+}
+
+#Books .right p {
+  font-size: var(--fs-sm);
+  color: var(--faded-copper-3);
+  font-family: var(--font-family-sans);
+}

@@ -23,17 +23,29 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- INDEX JS / CSS ---------------------------------------------------------------------------------------------- -->
 
     <!-- **index js** -->
 
     <script src="./index-js/index.js" defer></script>
 
+
+    <script src="./index-js/bookSection.js" defer></script>
+
     <!-- **index header css** -->
 
     <link rel="stylesheet" href="./index-css/header.css">
 
     <link rel="stylesheet" href="./index-css/home.css">
+
+    <link rel="stylesheet" href="./index-css/bookCards.css">
+    
+    <link rel="stylesheet" href="./index-css/Books.css">
+
+
 </head>
 
 <body>
@@ -70,29 +82,101 @@
         <div class="hero-image"></div>
         <!-- Categories -->
         <section class="categories">
-            <div class="category">
-                <span class="category-icon"><i class="fa-solid fa-book"></i></span>
-            </div>
-            <span class="category-label">By Subject</span>
-            <div class="category">
-                <span class="category-icon"><i class="fa-solid fa-star"></i></span>
-            </div>
-            <span class="category-label">Selected</span>
-            <div class="category">
-                <span class="category-icon"><i class="fa-solid fa-flag"></i></span>
-            </div>
-            <span class="category-label">World Literature</span>
-            <div class="category">
-                <span class="category-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="category-wrapper">
+                <div class="category">
+                    <h3 class="category-icon"><i class="fa-solid fa-book"></i></h3>
+                </div>
+                <h3 class="category-label">Novel</h3>
             </div>
 
-            <span class="category-label">Story Types</span>
-            <div class="category">
-                <span class="category-icon"><i class="fa-solid fa-award"></i></span>
+            <div class="category-wrapper">
+                <div class="category">
+                    <h3 class="category-icon"><i class="fa-solid fa-flag"></i></h3>
+                </div>
+                <h3 class="category-label">World Literature</h3>
             </div>
-            <span class="category-label">Literary Awards</span>
+
+            <div class="category-wrapper">
+                <div class="category">
+                    <h3 class="category-icon"><i class="fa-solid fa-graduation-cap"></i></h3>
+                </div>
+                <h3 class="category-label">Persian</h3>
+            </div>
+
+            <div class="category-wrapper">
+                <div class="category">
+                    <h3 class="category-icon"><i class="fa-solid fa-award"></i></h3>
+                </div>
+                <h3 class="category-label">Literary Awards</h3>
+            </div>
         </section>
+
+<main>
+
     </section>
+
+    <section class="book-section">
+        <h2 class="section-title">پرفروش‌ها</h2>
+        <div class="scroll-container" id="bestsellers"></div>
+    </section>
+
+    <section class="book-section">
+        <h2 class="section-title">جدیدترین کتاب‌ها</h2>
+        <div class="scroll-container" id="new-books"></div>
+    </section>
+
+    <section id="Books" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column: Bookstore Intro -->
+      <div class="left col-lg-7 mb-4 px-5 py-5 mt-5">
+    <img class="logo-books" src="./images/logo.png" alt="">
+        <h3 class="mb-3">B O O K S T O R E </h3>
+        <h1 class="py-3">Stories and knowledge for every reader</h1>
+        <p class="py-2">
+          We specialize in offering bestselling novels, inspiring non‑fiction, and timeless classics.<br>
+          Whether you are discovering Persian literature or exploring world authors,<br>
+          our shelves blend culture, imagination, and wisdom to deliver books that matter.<br>
+          We provide collections that are diverse, curated, and ready to enrich your life.
+        </p>
+        <a href="./shop.html" class="details pt-4 hvr-underline-from-left">SEE COLLECTION</a>
+      </div>
+
+      <!-- Right Column: Book Categories -->
+      <div class="right col-lg-5 d-flex">
+        <div class="row g-4 mt-lg-4">
+          <div class="col-md-6">
+            <i class="fa-solid fa-book"></i>
+            <h2>Novels</h2>
+            <p>From Persian masterpieces to global classics.</p>
+          </div>
+          <div class="col-md-6">
+            <i class="fa-solid fa-globe"></i>
+            <h2>World Literature</h2>
+            <p>Translations of celebrated international authors.</p>
+          </div>
+          <div class="col-md-6">
+            <i class="fa-solid fa-award"></i>
+            <h2>Award Winners</h2>
+            <p>Books honored with major literary prizes.</p>
+          </div>
+          <div class="col-md-6">
+            <i class="fa-solid fa-fire"></i>
+            <h2>Bestsellers</h2>
+            <p>Titles loved by thousands of readers worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- END section services  -->
+
+</main>
+
+
+
 </body>
 
 </html>

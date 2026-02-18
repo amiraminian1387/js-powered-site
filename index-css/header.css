@@ -1,9 +1,9 @@
 .header {
-  font-family:var(--font-family-display) ;
+  font-family: var(--font-family-display);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right:var(--size-lg);
+  padding-right: var(--size-lg);
   backdrop-filter: blur(10px) saturate(120%);
   background-color: rgba(156, 109, 77, 0.678);
   -webkit-backdrop-filter: blur(6px) saturate(100%);
@@ -25,7 +25,7 @@
 }
 
 .header-logo {
-  height: var( --size-xxxl);
+  height: var(--size-xxxl);
   animation: spin 4s cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
 
 }
@@ -36,15 +36,14 @@
 }
 
 
-/* From Uiverse.io by Codecite */
 .login-btn {
   transition: all 0.3s ease-in-out;
   font-family: var(--font-stylish);
-  font-style: var( --font-style-italic);
+  font-style: var(--font-style-italic);
   width: var(--size-button);
   height: var(--size-xxl);
   border-radius: var(--btn-radius);
-  background-image: linear-gradient(135deg,  #7f5539ff 0%, #ad8164ff 50%, #7f5539ff 100%);
+  background-image: linear-gradient(135deg, #7f5539ff 0%, #ad8164ff 50%, #7f5539ff 100%);
   box-shadow: 0 20px 30px -6px #432818ff;
   font-size: var(--fs-base);
   color: var(--dark-wine);
@@ -57,6 +56,161 @@
   box-shadow: none;
 }
 
+.search-bar {
+  width: var(--percentage-40);
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--dark-wine);
+  border-radius: var(--btn-radius);
+  font-size: var(--fs-base);
+  animation: spin 3s cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+
+}
+
+.search-bar::placeholder {
+  font-family: var(--font-family-mono);
+  font-style: oblique;
+  color: var(--wine);
+}
+
+
+.hero {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tan);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-image {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-image: url(../images/forough-Farrokhzad.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: center var(--percentage-30);
+}
+
+.categories {
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin: var(--space-md) var(--zero-space);
+  align-items: flex-start;
+}
+
+
+.category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  border-radius: var(--btn-radius);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+.category {
+  width: var(--size-xxxxl);
+  height: var(--size-xxxxl);
+  background: var(--dark-wine);
+  border-radius: var(--circle-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 14px var(--wine);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  background: var(--wine);
+  box-shadow: 0 12px 20px var(--dark-wine);
+  transform: translateY(-5px);
+}
+
+.category-icon {
+  font-size: var(--size-xl);
+  color: var(--tan);
+}
+
+.category-label {
+  .category-label {
+    font-family: var(--font-stylish);
+    font-style: var(--font-style-italic);
+    font-size: calc(var(--fs-base) * 1.1);
+    color: var(--light-apricot);
+    text-align: center;
+    margin-top: var(--space-xs);
+  }
+
+}
+
+
+
+
+
+.category:hover .category-icon {
+  color: var(--light-apricot);
+}
+
+@media (max-width: 1300px) {
+  .category-wrapper:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .category-wrapper:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .category-wrapper:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-wrapper:nth-child(1) {
+    display: none;
+  }
+}
+.category-wrapper:nth-child(4){
+  animation: fadeSlideRight  4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards ;
+}.category-wrapper:nth-child(3){
+  animation: fadeSlideRight 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+}
+.category-wrapper:nth-child(2){
+  animation: fadeSlideLeft 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+}
+.category-wrapper:nth-child(1){
+  animation: fadeSlideLeft 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+}
+
+
+@keyframes fadeSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes fadeSlideRight {
   from {
     opacity: 0;
@@ -67,85 +221,4 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-
-
-.search-bar {
-  width: 40%;
-  padding: 10px 18px;
-  border: 2px solid var(--dark-wine);
-  border-radius: 25px;
-  font-size: 1rem;
-  animation: spin 3s cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
-
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #ff99cc, #000);
-  color: #fff;
-  padding: 40px 20px;
-}
-
-.hero-section {
-  position: relative;
-}
-
-.hero-image {
-  background-image: url(../images/forough-Farrokhzad.jpg);
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: cover;
-  background-position: center 30%;
-}
-
-.categories {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 30px 0;
-  align-items: flex-start;
-}
-
-.category {
-  width: 110px;
-  height: 110px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 2px 8px #0001;
-  margin-bottom: 8px;
-}
-
-.category-icon {
-  font-size: 38px;
-  color: #555;
-}
-
-.category-label {
-  display: block;
-  text-align: center;
-  font-size: 16px;
-  color: #444;
-  margin-top: 2px;
-  margin-bottom: 12px;
-  width: 110px;
-}
-
-.category:hover {
-  background: #ff0066;
-  color: #fff;
-}
-
-.category:hover .category-icon {
-  color: #fff;
 }
