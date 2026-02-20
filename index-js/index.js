@@ -13,7 +13,7 @@ setTimeout(() => {
             document.getElementById("splash").style.display = "none";
             document.querySelectorAll(".main-content").forEach(el => el.style.display = "block");
         }, 10);
-    }, 1);
+    }, 2999);
 }, 100);
 
 // --------------------------------------------------------------------------------------------------------------------------//

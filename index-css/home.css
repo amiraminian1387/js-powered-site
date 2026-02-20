@@ -9,6 +9,7 @@ body {
   animation: bgMove 10s ease infinite;
 }
 
+
 @keyframes bgMove {
   0% {
     background-position: 0% 0%;
@@ -22,4 +23,5 @@ body {
     background-position: 0% 0%;
   }
 }
+
 

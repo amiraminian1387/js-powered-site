@@ -32,17 +32,16 @@
     --gray-bg-opc: rgba(255, 255, 255, 0.25);
     --bg-main: #ede0d4;
     --bg-card: rgba(255, 255, 255, 0.15);
-    --accent: #f6b042;
+    
     --accent-dark: #d97706;
-    --text-main: #432818;
+    --text-main: #181412;
     --text-sub: #7f5539;
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    --bg-main: #ede0d4;
-    --bg-card: rgba(255, 255, 255, 0.15);
-    --accent-dark: #d97706;
-    --text-main: #432818;
-    --text-sub: #7f5539;
-    --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    
+    
     --card-width: 280px;
     --card-radius: 20px;
     --img-height: 340px;

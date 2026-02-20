@@ -31,6 +31,38 @@
     transform: translateY(-8px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
+.section-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #6b1c1c;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: var(--size-xxxl);
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffe6a7 0%, #fff7e6 100%);
+    border-radius: 1.5rem;
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 12px rgba(107,28,28,0.08);
+      transition: .5s ease-in-out;
+
+
+}
+.section-title:hover {
+  color: var(--primary);
+  border-color: var(--primary-light);
+  transition: .75s ease-in-out;
+  box-shadow: 0 10px 20px var(--wine);
+}
+
+@media (max-width: 700px) {
+    .section-title {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        margin-bottom: 1.2rem;
+        margin-top: 1.5rem;
+    }
+}
+
 
 /* تصویر کتاب */
 .book-img {
@@ -63,7 +95,7 @@
     font-weight: 600;
     color: var(--accent);
     margin-bottom: 12px;
-}
+} 
 
 /* دکمه افزودن به سبد خرید */
 .add-to-cart {
@@ -82,6 +114,72 @@
     background: var(--accent-dark);
     transform: scale(1.05);
 }
+
+/* کارت تخفیف‌دار -------------------------------*/
+.discount-card {
+  position: relative;
+  border: 2px solid var(--accent);
+}
+
+/* بج تخفیف */
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* قیمت قبلی */
+.old-price {
+  text-decoration: line-through;
+  color: var(--faded-copper);
+  margin-right: 8px;
+}
+
+/* قیمت جدید */
+.new-price {
+  color: var(--accent);
+  font-weight: var(--fw-bold);
+}
+/* اسکلتن کارت */
+.skeleton-card {
+  width: 220px;
+  height: 350px;
+  border-radius: var(--card-radius);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: relative;
+}
+
+/* انیمیشن شاین */
+.skeleton-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  animation: skeleton-shine 1.2s infinite;
+}
+
+@keyframes skeleton-shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
 
 
 
