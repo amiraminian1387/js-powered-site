@@ -53,6 +53,30 @@
   transition: .75s ease-in-out;
   box-shadow: 0 10px 20px var(--wine);
 }
+.search-results {
+  margin-top: 0.5rem;
+  background: #fff7e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  font-family: sans-serif;
+
+  max-height: 90px;   /
+  overflow-y: auto;    
+}
+.search-results div {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+.search-results div:last-child {
+  border-bottom: none;
+}
+.search-results div:hover {
+  background: #ffe0b2;
+}
+
+
 
 @media (max-width: 700px) {
     .section-title {

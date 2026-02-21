@@ -1,0 +1,108 @@
+/* SECTION IMAGES */
+section#iamges {
+  font-family: var(--font-family-sans);
+}
+
+section#iamges .container {
+  display: flex;
+  gap: var(--space-xs);
+  width: 94%;
+}
+
+/* LEFT */
+section#iamges .left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+section#iamges .left h1 {
+  margin: 0;
+}
+
+section#iamges .left .pic {
+  flex: 1;
+}
+
+section#iamges .left .caption {
+  position: static;
+  text-align: left;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 4px 4px 10px var(--wine);
+  cursor: pointer;
+}
+
+/* RIGHT */
+section#iamges .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.right .pic:first-child {
+  flex: 0.4;
+}
+
+.right .pic:last-child {
+  flex: 0.6;
+}
+
+.right h1 {
+  background: linear-gradient(to left, var(--accent) 60%, var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right p {
+  color: var(--dark-wine);
+  letter-spacing: 0.4rem;
+  font-weight: var(--fw-bold);
+}
+
+/* PIC */
+.pic {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  cursor: pointer;
+  transition: 0.9s ease-in-out;
+  box-shadow: var(--shadow);
+  background: var(--bg-card);
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.pic .caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECTS */
+.right .pic:hover img {
+  transform: scale(1.05);
+  opacity: 0.25;
+}
+
+.left .pic:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+
+.pic:hover .caption {
+  opacity: 1;
+  transform: translateY(-4px);
+}
