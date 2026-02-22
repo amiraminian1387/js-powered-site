@@ -60,9 +60,8 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 0.5rem;
   font-family: sans-serif;
-
-  max-height: 90px;   /
-  overflow-y: auto;    
+  max-height: 90px;   
+  overflow: hidden;  
 }
 .search-results div {
   padding: 0.3rem 0.5rem;
@@ -88,7 +87,6 @@
 }
 
 
-/* تصویر کتاب */
 .book-img {
     width: 100%;
     height: var(--img-height);
@@ -97,7 +95,6 @@
     margin-bottom: 16px;
 }
 
-/* عنوان */
 .book-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -106,14 +103,12 @@
     font-family: "Poppins", "IranSans", sans-serif;
 }
 
-/* نویسنده */
 .book-author {
     font-size: 1rem;
     color: var(--text-sub);
     margin-bottom: 8px;
 }
 
-/* قیمت */
 .book-price {
     font-size: 1.1rem;
     font-weight: 600;
@@ -121,7 +116,6 @@
     margin-bottom: 12px;
 } 
 
-/* دکمه افزودن به سبد خرید */
 .add-to-cart {
     padding: 10px 16px;
     background: var(--accent);
@@ -139,13 +133,11 @@
     transform: scale(1.05);
 }
 
-/* کارت تخفیف‌دار -------------------------------*/
 .discount-card {
   position: relative;
   border: 2px solid var(--accent);
 }
 
-/* بج تخفیف */
 .discount-badge {
   position: absolute;
   top: 12px;
@@ -159,19 +151,16 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* قیمت قبلی */
 .old-price {
   text-decoration: line-through;
   color: var(--faded-copper);
   margin-right: 8px;
 }
 
-/* قیمت جدید */
 .new-price {
   color: var(--accent);
   font-weight: var(--fw-bold);
 }
-/* اسکلتن کارت */
 .skeleton-card {
   width: 220px;
   height: 350px;
@@ -182,7 +171,6 @@
   position: relative;
 }
 
-/* انیمیشن شاین */
 .skeleton-card::after {
   content: "";
   position: absolute;
