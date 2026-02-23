@@ -1,0 +1,137 @@
+footer {
+    position: relative;
+    background-color: rgba(116, 69, 41, 0.705);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(30px) saturate(160%);
+     border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.footer-gt {
+    color: var(--text-main, #ffe6a7);
+    font-family: var(--font-main, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+    padding: 4rem 0;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to left, var(--accent, #ffe6a7) 60%, var(--primary, #432818));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: var(--wine, #432818cc);
+    margin-bottom: 0.5rem;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: var(--wine, #432818cc);
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: var(--accent, #ffe6a7);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    font-size: 1.2rem;
+    color: var(--text-sub, #ffe6a7cc);
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--primary, #432818);
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footer-form input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bg-card, #a68a64);
+    color: var(--text-main, #432818);
+    font-size: 14px;
+    width: 250px;
+}
+
+.footer-form button {
+    background: linear-gradient(to left, var(--accent, #ffe6a7), var(--primary, #432818));
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: var(--primary, #432818);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-form button:hover {
+    opacity: 0.9;
+    background: var(--accent-dark, #a68a64);
+    color: var(--text-main, #ffe6a7);
+}
+
+.footer-divider {
+    border-color: var(--accent, #ffe6a7);
+    margin: 2rem 0 1rem;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: var(--text-sub, #ffe6a7cc);
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to left, var(--accent, #ffe6a7), var(--primary, #432818));
+    color: var(--primary, #432818);
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: var(--primary, #432818);
+    color: var(--accent, #ffe6a7);
+    transform: translateX(-50%) translateY(-4px);
+}
+
+
+
+
+
+
+

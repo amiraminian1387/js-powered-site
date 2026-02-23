@@ -17,7 +17,7 @@
 
     /* رنگ‌های کمکی (برای نمودارها یا تگ‌ها...) */
     --dark-wine: #6f1d1bff;
-    --wine: rgb(63, 9, 8);
+    --wine: oklab(24.32% 0.0739 0.03729);
     --camel: #bb9457ff;
     --dark-coffee: #432818ff;
     --chocolate-brown: #99582aff;

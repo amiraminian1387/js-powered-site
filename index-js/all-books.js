@@ -13,7 +13,7 @@ function renderBooks() {
       <img src="${b.image}" alt="${b.title}" class="book-pic">
       <h3 class="book-name">${b.title}</h3>
       <p class="book-writer">${b.author}</p>
-      <p class="book-cost">${b.price} $</p>
+      <p class="book-cost">${b.price} $ </p>
     </div>
   `).join('');
 }

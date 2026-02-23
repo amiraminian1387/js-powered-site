@@ -76,7 +76,7 @@ function createCard(book) {
     <h3 class="book-title">${book.title}</h3>
     <p class="book-author">${book.author}</p>
     <p class="book-price">$${book.price}</p>
-    <button class="add-to-cart">افزودن به سبد خرید</button>
+    <button class="add-to-cart">Add to cart</button>
   `;
   return card;
 }
@@ -96,7 +96,7 @@ function createDiscountCard(book) {
       <span class="old-price">$${book.price}</span>
       <span class="new-price">$${(book.price * 0.7).toFixed(2)}</span>
     </p>
-    <button class="add-to-cart">افزودن به سبد خرید</button>
+    <button class="add-to-cart">Add to cart</button>
   `;
   return card;
 }
@@ -107,7 +107,7 @@ function createDiscountCard(book) {
 document.addEventListener("click", e => {
   if (e.target.classList.contains("add-to-cart")) {
     const title = e.target.parentElement.querySelector(".book-title").textContent;
-    alert(`کتاب "${title}" به سبد خرید اضافه شد!`);
+    alert(`Book "${title}" has been added to the cart!`);
   }
 });
 

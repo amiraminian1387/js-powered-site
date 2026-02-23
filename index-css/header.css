@@ -7,6 +7,20 @@
   backdrop-filter: blur(10px) saturate(120%);
   background-color: rgba(156, 109, 77, 0.678);
   -webkit-backdrop-filter: blur(6px) saturate(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--percentage);
+  z-index: var(--z-header);
+  transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+}
+
+.header.show {
+  transform: translateY(0);
 }
 
 .logo {
@@ -186,15 +200,20 @@
     display: none;
   }
 }
-.category-wrapper:nth-child(4){
-  animation: fadeSlideRight  4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards ;
-}.category-wrapper:nth-child(3){
+
+.category-wrapper:nth-child(4) {
   animation: fadeSlideRight 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
 }
-.category-wrapper:nth-child(2){
+
+.category-wrapper:nth-child(3) {
+  animation: fadeSlideRight 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
+}
+
+.category-wrapper:nth-child(2) {
   animation: fadeSlideLeft 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
 }
-.category-wrapper:nth-child(1){
+
+.category-wrapper:nth-child(1) {
   animation: fadeSlideLeft 4.5S cubic-bezier(0.77, 0, 0.175, 1) 0.999s forwards;
 }
 

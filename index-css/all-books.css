@@ -2,13 +2,11 @@
     margin-top: var(--space-3xl);
     position: relative;
     padding: var(--space-lg);
-    /* بک‌گراند لوگو یا تصویر */
     background: url("../images/logo.png") center/contain no-repeat;
-    /* شیشه‌ای روی بک‌گراند */
     background-color: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(18px) saturate(160%);
     -webkit-backdrop-filter: blur(18px) saturate(160%);
-    border-radius: 24px;
+    border-radius:var(--large-radius);
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
     transition: 0.4s ease-in-out;
@@ -37,7 +35,7 @@
     margin: 0 var(--space-xs);
     padding: var(--space-xs) var(--space-md);
     background: var(--accent);
-    color: #fff;
+    color: var( --light-apricot);
     border: none;
     border-radius: var(--btn-radius);
     cursor: pointer;

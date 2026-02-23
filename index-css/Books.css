@@ -45,7 +45,7 @@
   margin-top: var(--space-md);
   padding: var(--space-xs) var(--space-lg);
   background: var(--accent);
-  color: #fff;
+  color: var(--light-apricot);
   border-radius: var(--btn-radius);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
