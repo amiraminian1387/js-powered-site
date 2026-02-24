@@ -71,6 +71,8 @@ function renderDiscountSection(id, list) {
 function createCard(book) {
   const card = document.createElement("div");
   card.className = "book-card";
+  card.dataset.id = String(book.id);           
+  card.dataset.price = String(book.price);     
   card.innerHTML = `
     <img src="${book.image}" class="book-img" />
     <h3 class="book-title">${book.title}</h3>
@@ -81,12 +83,18 @@ function createCard(book) {
   return card;
 }
 
+
 /* -------------------------
    کارت تخفیف‌دار
 ------------------------- */
+
+
 function createDiscountCard(book) {
+  const newPrice = +(book.price * 0.7).toFixed(2);
   const card = document.createElement("div");
   card.className = "book-card discount-card";
+  card.dataset.id = String(book.id);
+  card.dataset.price = String(newPrice);
   card.innerHTML = `
     <div class="discount-badge">30% OFF</div>
     <img src="${book.image}" class="book-img" />
@@ -94,22 +102,55 @@ function createDiscountCard(book) {
     <p class="book-author">${book.author}</p>
     <p class="book-price">
       <span class="old-price">$${book.price}</span>
-      <span class="new-price">$${(book.price * 0.7).toFixed(2)}</span>
+      <span class="new-price">$${newPrice}</span>
     </p>
     <button class="add-to-cart">Add to cart</button>
   `;
   return card;
 }
 
+
+
+
 /* -------------------------
    دکمه سبد خرید
 ------------------------- */
 document.addEventListener("click", e => {
-  if (e.target.classList.contains("add-to-cart")) {
-    const title = e.target.parentElement.querySelector(".book-title").textContent;
-    alert(`Book "${title}" has been added to the cart!`);
+  if (!e.target.classList.contains("add-to-cart")) return;
+
+  const card = e.target.closest(".book-card");
+  if (!card) return;
+
+  const book = {
+    id: String(card.dataset.id || ""),                   
+    title: card.querySelector(".book-title").textContent.trim(),
+    author: card.querySelector(".book-author").textContent.trim(),
+    price: Number(card.dataset.price || 0),                 
+    image: card.querySelector(".book-img").src,
+    qty: 1
+  };
+
+  if (!book.id) {
+    console.error("Missing book id on card:", card);
+    alert("Error: book id missing. Check console.");
+    return;
   }
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existing = cart.find(i => String(i.id) === book.id);
+
+  if (existing) {
+    existing.qty = (existing.qty || 0) + 1;
+  } else {
+    cart.push(book);
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`Added: ${book.title}`);
 });
+
+
 
 /* -------------------------
    اجرا

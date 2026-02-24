@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./common-css/common.css">
+
+    <!-- **variables** -->
+
+    <link rel="stylesheet" href="./common-css/variables.css">
+
+    <!-- **splash** -->
+
+    <link rel="stylesheet" href="./common-css/splash.css">
+
+    <!-- **bootstrap** -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+          <!-- **Cart Page js** -->
+<script src="./Cart-Page-js/cart-page.js" defer></script>
+          <!-- **Cart Page css** -->
+
+          <link rel="stylesheet" href="./Cart-Page-css/cart-page.css">
+
+</head>
+
+<body>
+<section id="cart-page">
+  <h2 class="cart-title">🛒 Your Cart</h2>
+
+  <div class="cart-container">
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+
+      <!-- Sample Item -->
+      <div class="cart-item">
+        <img src="./images/sample.jpg" class="cart-img" alt="Book">
+        <div class="cart-info">
+          <h3 class="cart-name">Book Title</h3>
+          <p class="cart-author">Author Name</p>
+          <p class="cart-price">120000 Toman</p>
+        </div>
+
+        <div class="cart-qty">
+          <button class="qty-btn">−</button>
+          <span class="qty-number">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- More items will be added dynamically -->
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h3 class="summary-title">Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">120000</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span>Free</span>
+      </div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <span id="total">120000</span>
+      </div>
+
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+  </div>
+</section>
+
+</body>
+
+</html>
