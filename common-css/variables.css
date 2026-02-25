@@ -174,3 +174,16 @@
     --z-modal: 1100;
     --z-tooltip: 1200;
 }
+/* تنظیمات پایه و fallback برای متغیرها */
+:root{
+  --quote-bg: rgba(255,255,255,0.06);
+  --quote-text: #efece6;       
+  --quote-author: #ffdca8;      
+  --quote-muted: rgba(255,255,255,0.75);
+  --quote-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  --quote-font-family: "Vazirmatn", "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --quote-size-lg: 20px;
+  --quote-size-md: 18px;
+  --quote-size-sm: 16px;
+  --quote-radius: 12px;
+}
