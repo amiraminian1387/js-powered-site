@@ -1,0 +1,109 @@
+/* وریبل‌های اصلی تو */
+@import url("variables.css");
+
+/* صفحه Novel */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-main);
+    font-family: var(--font-family-sans);
+    color: var(--text-main);
+}
+
+/* Header */
+.novel-header {
+    background: var(--faded-copper);
+    padding: var(--space-lg);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.novel-header h1 {
+    margin: 0;
+    font-size: var(--fs-4xl);
+    color: var(--almond-cream);
+    font-family: var(--font-family-display);
+}
+
+/* About Section */
+.novel-info {
+    max-width: 800px;
+    margin: var(--space-2xl) auto;
+    padding: var(--space-xl);
+    background: var(--bg-card);
+    border-radius: var(--global-radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.novel-info h2 {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-md);
+    color: var(--coffee-bean);
+}
+
+.novel-info p {
+    font-size: var(--fs-lg);
+    line-height: var(--lh-relaxed);
+    color: var(--text-sub);
+}
+
+/* Cards Wrapper */
+.novel-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-xl);
+    padding: var(--space-2xl);
+}
+
+/* Card */
+.novel-card {
+    background: var(--bg-card);
+    border-radius: var(--card-radius);
+    padding: var(--space-md);
+    text-align: center;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.novel-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+.novel-card img {
+    width: 100%;
+    height: var(--img-height);
+    object-fit: cover;
+    border-radius: var(--card-radius);
+    margin-bottom: var(--space-sm);
+}
+
+.novel-title {
+    font-size: var(--fs-xl);
+    margin: var(--space-xs) 0;
+    color: var(--coffee-bean);
+}
+
+.novel-author {
+    font-size: var(--fs-md);
+    color: var(--text-sub);
+    margin-bottom: var(--space-md);
+}
+
+.novel-btn {
+    background: var(--accent);
+    color: var(--dark-coffee);
+    border: none;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    font-size: var(--fs-md);
+    transition: 0.3s;
+}
+
+.novel-btn:hover {
+    background: var(--accent-dark);
+    color: var(--almond-cream);
+}

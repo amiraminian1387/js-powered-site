@@ -1,0 +1,49 @@
+@import url("variables.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-main);
+    font-family: var(--font-family-sans);
+    color: var(--text-main);
+}
+
+/* Header */
+.pl-header {
+    background: var(--faded-copper);
+    padding: var(--space-lg);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.pl-header h1 {
+    margin: 0;
+    font-size: var(--fs-4xl);
+    color: var(--almond-cream);
+    font-family: var(--font-family-display);
+}
+
+/* Info Section */
+.pl-info {
+    max-width: 900px;
+    margin: var(--space-2xl) auto;
+    padding: var(--space-2xl);
+    background: var(--bg-card);
+    border-radius: var(--global-radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+}
+
+.pl-info h2 {
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-lg);
+    color: var(--coffee-bean);
+    font-family: var(--font-family-display);
+}
+
+.pl-info p {
+    font-size: var(--fs-lg);
+    line-height: var(--lh-relaxed);
+    margin-bottom: var(--space-lg);
+    color: var(--text-sub);
+}

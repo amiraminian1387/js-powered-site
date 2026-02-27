@@ -1,4 +1,4 @@
-const API_URL = "https://6995f89db081bc23e9c5017a.mockapi.io/BOOK-STORE/BOOKNEST";
+  const API_URL = "https://6995f89db081bc23e9c5017a.mockapi.io/BOOK-STORE/BOOKNEST";
 
 async function loadSections() {
 
