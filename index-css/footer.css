@@ -130,7 +130,11 @@ footer {
 }
 
 
-
+@media (max-width: 768px) {
+  form.footer-form {
+    display: none;
+  }
+}
 
 
 
